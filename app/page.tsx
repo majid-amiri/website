@@ -32,16 +32,17 @@ const contacts = [
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="h-[calc(100dvh)]">
       <div className="h-full relative isolate overflow-hidden bg-gray-900">
         <div className="h-full container mx-auto">
           <div className="h-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-            <div className="flex-none text-center lg:text-left">
+            <div className="flex-none text-center px-4 lg:px-0 lg:text-left">
               <h1 className="text-4xl lg:text-8xl font-bold tracking-tight text-gray-300">
                 Majid Amiri
               </h1>
               <p className="mt-6 text-xl font-bold leading-8 text-gray-400">
-                Senior Software Engineer
+                Senior Software Engineer &<br />
+                Web Development Instructor
               </p>
               <div className="mt-6 text-gray-400 flex gap-4 justify-center lg:justify-start">
                 {contacts.map((c) => (
